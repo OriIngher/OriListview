@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     Intent gi;
-    String[] ya;
+    String[] ya,ya1;
     Button Back;
 TextView Capital,Population;
 ListView Lv1;
@@ -99,60 +99,60 @@ ListView Lv1;
             Population.setText("51.7 million");
         }if ("Egypt".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Cairo");
+            Population.setText("97.55 million");
         }if ("Nigeria".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Abuja");
+            Population.setText("190.9 million");
         }if ("South Africa".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Cape Town");
+            Population.setText("57.7 million");
         }if ("Algeria".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Algiers");
+            Population.setText("41.32 million");
         }if ("Morocco".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Rabat");
+            Population.setText("35.7 million");
         }if ("Ethiopia".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Addis Ababa");
+            Population.setText("105 million");
         }if ("Ghana".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Accra");
+            Population.setText("28.83 million");
         }if ("Germany".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Berlin");
+            Population.setText("83 million");
         }if ("France".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Paris");
+            Population.setText("66.99 million");
         }if ("United Kingdom".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("London");
+            Population.setText("67.5 million");
         }if ("Italy".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Rome");
+            Population.setText("60.59 million");
         }if ("Spain".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Madrid");
+            Population.setText("46.9 million");
         }if ("Ukraine".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Kyiv");
+            Population.setText("44.83 million");
         }if ("Poland".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Warsaw");
+            Population.setText("38.43 million");
         }
     }
     }
