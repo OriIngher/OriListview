@@ -11,8 +11,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity implements AdapterView.OnItemClickListener {
-    Intent gi =  getIntent();
-    String[] ya = gi.getStringArrayExtra("con");
+    Intent gi;
+    String[] ya;
     Button Back;
 TextView Capital,Population;
 ListView Lv1;
@@ -20,6 +20,8 @@ ListView Lv1;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        gi =  getIntent();
+        ya = gi.getStringArrayExtra("con");
         Back = (Button) findViewById(R.id.Back);
         Capital = (TextView) findViewById(R.id.Capital);
         Population = (TextView) findViewById(R.id.Population);
@@ -39,62 +41,62 @@ ListView Lv1;
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         if ("Argentina".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Buenos Aires");
+            Population.setText("44.27 million");
         }
         if ("Bolivia".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Sucre");
+            Population.setText("11.05 million");
         }
         if ("Brazil".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Brasilia");
+            Population.setText("209.3 million ");
         }if ("Canada".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Ottawa");
+            Population.setText("37.06 million");
         }if ("Chile".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Santiago");
+            Population.setText("18.05 million");
         }if ("United States".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Washington");
+            Population.setText("327.2 million");
         }if ("Colombia".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Bogota");
+            Population.setText("49 million");
         }if ("China".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Beijing");
+            Population.setText("1.386 billion");
         }if ("India".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("New Delhi");
+            Population.setText("1.339 billion");
         }if ("Japan".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Tokio");
+            Population.setText("126.8 million");
         }if ("Russia".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Moscow");
+            Population.setText("144.5 million");
         }if ("Indonesia".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Jakarta");
+            Population.setText("264 million");
         }if ("Turkey".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Ankara");
+            Population.setText("79.8 million");
         }if ("South Korea".equals(ya[0]))
         {
-            Capital.setText("Tokyo");
-            Population.setText("126,168,156");
+            Capital.setText("Seoul");
+            Population.setText("51.7 million");
         }if ("Egypt".equals(ya[0]))
         {
             Capital.setText("Tokyo");

@@ -42,19 +42,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         if (choice.equals("America")) {
             String[] am = {"Argentina", "Bolivia", "Brazil", "Canada", "Chile", "United States", "Colombia"};
-            si.putExtra("con", am);
+            si.putExtra("con",am);
         }
         if (choice.equals("Asia")) {
             String[] as = {"China", "India", "Japan", "Russia", "Indonesia", "Turkey", "South Korea"};
-            si.putExtra("con", as);
+            si.putExtra("con",as);
         }
         if (choice.equals("Africa")) {
             String[] af = {"Egypt", "Nigeria", "South Africa", "Algeria", "Morocco", "Ethiopia", "Ghana"};
-            si.putExtra("con", af);
+            si.putExtra("con",af);
         }
         if (choice.equals("Europe")) {
             String[] eu = {"Germany", "France", "United Kingdom", "Italy", "Spain", "Ukraine", "Poland"};
-            si.putExtra("con", eu);
+            si.putExtra("con",eu);
         }
 
         startActivity(si);
