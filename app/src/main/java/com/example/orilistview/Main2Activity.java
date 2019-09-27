@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity implements AdapterView.OnItemClickListener {
     Intent gi;
-    String[] ya,ya1;
+    String[] ya;
     Button Back;
 TextView Capital,Population;
 ListView Lv1;
@@ -29,7 +29,7 @@ ListView Lv1;
         Lv1.setOnClickListener((View.OnClickListener)this);
         Lv1.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
-        ArrayAdapter<String> adp1 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item);
+        ArrayAdapter<String> adp1 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,ya);
         Lv1.setAdapter(adp1);
     }
 

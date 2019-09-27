@@ -41,21 +41,26 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
 
         if (choice.equals("America")) {
-            String[] am = {"Argentina", "Bolivia", "Brazil", "Canada", "Chile", "United States", "Colombia"};
-            si.putExtra("con",am);
+            String[] ya = {"Argentina", "Bolivia", "Brazil", "Canada", "Chile", "United States", "Colombia"};
+            si.putExtra("con",ya);
         }
-        if (choice.equals("Asia")) {
-            String[] as = {"China", "India", "Japan", "Russia", "Indonesia", "Turkey", "South Korea"};
-            si.putExtra("con",as);
-        }
-        if (choice.equals("Africa")) {
-            String[] af = {"Egypt", "Nigeria", "South Africa", "Algeria", "Morocco", "Ethiopia", "Ghana"};
-            si.putExtra("con",af);
-        }
-        if (choice.equals("Europe")) {
-            String[] eu = {"Germany", "France", "United Kingdom", "Italy", "Spain", "Ukraine", "Poland"};
-            si.putExtra("con",eu);
-        }
+        else {
+            if (choice.equals("Asia")) {
+                String[] ya = {"China", "India", "Japan", "Russia", "Indonesia", "Turkey", "South Korea"};
+                si.putExtra("con", ya);
+            }
+            else {
+                if (choice.equals("Africa")) {
+                    String[] ya = {"Egypt", "Nigeria", "South Africa", "Algeria", "Morocco", "Ethiopia", "Ghana"};
+                    si.putExtra("con", ya);
+                }
+                else {
+                if (choice.equals("Europe")) {
+                    String[] ya = {"Germany", "France", "United Kingdom", "Italy", "Spain", "Ukraine", "Poland"};
+                    si.putExtra("con", ya);
+                }}
+            }
+            }
 
         startActivity(si);
     }
