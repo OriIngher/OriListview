@@ -26,7 +26,7 @@ ListView Lv1;
         Capital = (TextView) findViewById(R.id.Capital);
         Population = (TextView) findViewById(R.id.Population);
         Lv1 = (ListView) findViewById(R.id.Lv1);
-        Lv1.setOnClickListener((View.OnClickListener)this);
+        Lv1.setOnItemClickListener(this);
         Lv1.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
 
         ArrayAdapter<String> adp1 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,ya);
