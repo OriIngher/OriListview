@@ -14,7 +14,8 @@ public class Main2Activity extends AppCompatActivity implements AdapterView.OnIt
     Intent gi;
     String[] ya;
     Button Back;
-TextView Capital,Population;
+    String choice2;
+    TextView Capital,Population;
 ListView Lv1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,117 +40,118 @@ ListView Lv1;
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        if ("Argentina".equals(ya[0]))
+       choice2 = ya[position];
+        if ("Argentina".equals(choice2))
         {
             Capital.setText("Buenos Aires");
             Population.setText("44.27 million");
         }
-        if ("Bolivia".equals(ya[0]))
+        if ("Bolivia".equals(choice2))
         {
             Capital.setText("Sucre");
             Population.setText("11.05 million");
         }
-        if ("Brazil".equals(ya[0]))
+        if ("Brazil".equals(choice2))
         {
             Capital.setText("Brasilia");
             Population.setText("209.3 million ");
-        }if ("Canada".equals(ya[0]))
+        }if ("Canada".equals(choice2))
         {
             Capital.setText("Ottawa");
             Population.setText("37.06 million");
-        }if ("Chile".equals(ya[0]))
+        }if ("Chile".equals(choice2))
         {
             Capital.setText("Santiago");
             Population.setText("18.05 million");
-        }if ("United States".equals(ya[0]))
+        }if ("United States".equals(choice2))
         {
             Capital.setText("Washington");
             Population.setText("327.2 million");
-        }if ("Colombia".equals(ya[0]))
+        }if ("Colombia".equals(choice2))
         {
             Capital.setText("Bogota");
             Population.setText("49 million");
-        }if ("China".equals(ya[0]))
+        }if ("China".equals(choice2))
         {
             Capital.setText("Beijing");
             Population.setText("1.386 billion");
-        }if ("India".equals(ya[0]))
+        }if ("India".equals(choice2))
         {
             Capital.setText("New Delhi");
             Population.setText("1.339 billion");
-        }if ("Japan".equals(ya[0]))
+        }if ("Japan".equals(choice2))
         {
             Capital.setText("Tokio");
             Population.setText("126.8 million");
-        }if ("Russia".equals(ya[0]))
+        }if ("Russia".equals(choice2))
         {
             Capital.setText("Moscow");
             Population.setText("144.5 million");
-        }if ("Indonesia".equals(ya[0]))
+        }if ("Indonesia".equals(choice2))
         {
             Capital.setText("Jakarta");
             Population.setText("264 million");
-        }if ("Turkey".equals(ya[0]))
+        }if ("Turkey".equals(choice2))
         {
             Capital.setText("Ankara");
             Population.setText("79.8 million");
-        }if ("South Korea".equals(ya[0]))
+        }if ("South Korea".equals(choice2))
         {
             Capital.setText("Seoul");
             Population.setText("51.7 million");
-        }if ("Egypt".equals(ya[0]))
+        }if ("Egypt".equals(choice2))
         {
             Capital.setText("Cairo");
             Population.setText("97.55 million");
-        }if ("Nigeria".equals(ya[0]))
+        }if ("Nigeria".equals(choice2))
         {
             Capital.setText("Abuja");
             Population.setText("190.9 million");
-        }if ("South Africa".equals(ya[0]))
+        }if ("South Africa".equals(choice2))
         {
             Capital.setText("Cape Town");
             Population.setText("57.7 million");
-        }if ("Algeria".equals(ya[0]))
+        }if ("Algeria".equals(choice2))
         {
             Capital.setText("Algiers");
             Population.setText("41.32 million");
-        }if ("Morocco".equals(ya[0]))
+        }if ("Morocco".equals(choice2))
         {
             Capital.setText("Rabat");
             Population.setText("35.7 million");
-        }if ("Ethiopia".equals(ya[0]))
+        }if ("Ethiopia".equals(choice2))
         {
             Capital.setText("Addis Ababa");
             Population.setText("105 million");
-        }if ("Ghana".equals(ya[0]))
+        }if ("Ghana".equals(choice2))
         {
             Capital.setText("Accra");
             Population.setText("28.83 million");
-        }if ("Germany".equals(ya[0]))
+        }if ("Germany".equals(choice2))
         {
             Capital.setText("Berlin");
             Population.setText("83 million");
-        }if ("France".equals(ya[0]))
+        }if ("France".equals(choice2))
         {
             Capital.setText("Paris");
             Population.setText("66.99 million");
-        }if ("United Kingdom".equals(ya[0]))
+        }if ("United Kingdom".equals(choice2))
         {
             Capital.setText("London");
             Population.setText("67.5 million");
-        }if ("Italy".equals(ya[0]))
+        }if ("Italy".equals(choice2))
         {
             Capital.setText("Rome");
             Population.setText("60.59 million");
-        }if ("Spain".equals(ya[0]))
+        }if ("Spain".equals(choice2))
         {
             Capital.setText("Madrid");
             Population.setText("46.9 million");
-        }if ("Ukraine".equals(ya[0]))
+        }if ("Ukraine".equals(choice2))
         {
             Capital.setText("Kyiv");
             Population.setText("44.83 million");
-        }if ("Poland".equals(ya[0]))
+        }if ("Poland".equals(choice2))
         {
             Capital.setText("Warsaw");
             Population.setText("38.43 million");
