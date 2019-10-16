@@ -11,9 +11,13 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+/**
+ * @author Ori Ingher
+ */
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+
     ListView Lv;
-    Button Next;
     String choice;
     String[] con = {"America", "Asia", "Africa", "Europe"};
 
@@ -21,24 +25,37 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         Lv = (ListView) findViewById(R.id.Lv);
-        Next = (Button) findViewById(R.id.Next);
         Lv.setOnItemClickListener(this);
         Lv.setChoiceMode(ListView.CHOICE_MODE_SINGLE);
         ArrayAdapter<String> adp = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, con);
         Lv.setAdapter(adp);
+        /**
+         * Adapter between the String array and the List view
+         */
     }
+
 
     @Override
+    /**
+     * this function runs at the moment that the list view is thouched
+     */
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+/**
+ * creating a toast
+ */
         Toast.makeText(this, "" + con[position], Toast.LENGTH_SHORT).show();
         choice = con[position];
-
     }
 
-    public void go(View view) {
-        Intent si = new Intent(this, Main2Activity.class);
+    /**
+     * this function runs at the moment the button Next pressed
+     * @param view
+     */
+    public void Next(View view) {
 
+        Intent si = new Intent(this, Main2Activity.class);
 
         if (choice.equals("America")) {
             String[] ya = {"Argentina", "Bolivia", "Brazil", "Canada", "Chile", "United States", "Colombia"};
@@ -55,14 +72,22 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                     si.putExtra("con", ya);
                 }
                 else {
-                if (choice.equals("Europe")) {
-                    String[] ya = {"Germany", "France", "United Kingdom", "Italy", "Spain", "Ukraine", "Poland"};
-                    si.putExtra("con", ya);
-                }}
-            }
-            }
+                    if (choice.equals("Europe")) {
+                        String[] ya = {"Germany", "France", "United Kingdom", "Italy", "Spain", "Ukraine", "Poland"};
+                        si.putExtra("con", ya);
+                    }
+                    else
+                    {
+                        Toast.makeText(this, "no continental selected,try again" , Toast.LENGTH_SHORT).show();
+                    }
+                }
+             }
+        }
 
         startActivity(si);
+        /**
+         * the transform from the main to the second activity
+         */
     }
 }
 

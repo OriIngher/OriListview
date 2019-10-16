@@ -10,20 +10,24 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
+/**
+ * @author Ori Ingher
+ */
 public class Main2Activity extends AppCompatActivity implements AdapterView.OnItemClickListener {
+
     Intent gi;
     String[] ya;
-    Button Back;
     String choice2;
     TextView Capital,Population;
-ListView Lv1;
+    ListView Lv1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+
         gi =  getIntent();
         ya = gi.getStringArrayExtra("con");
-        Back = (Button) findViewById(R.id.Back);
         Capital = (TextView) findViewById(R.id.Capital);
         Population = (TextView) findViewById(R.id.Population);
         Lv1 = (ListView) findViewById(R.id.Lv1);
@@ -32,129 +36,141 @@ ListView Lv1;
 
         ArrayAdapter<String> adp1 = new ArrayAdapter<String>(this,R.layout.support_simple_spinner_dropdown_item,ya);
         Lv1.setAdapter(adp1);
+        /**
+         * Adapter between the String array and the List view
+         */
     }
 
+    /**
+     * the function runs at the moment the Back button is pressed/back to main activity
+     * @param view
+     */
     public void goo(View view) {
         finish();
     }
 
     @Override
+
+    /**
+     * the function runs at the moment that the list view is touched
+     */
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-       choice2 = ya[position];
+
+        choice2 = ya[position];
         if ("Argentina".equals(choice2))
         {
-            Capital.setText("Buenos Aires");
-            Population.setText("44.27 million");
+            Capital.setText("Capital city: Buenos Aires");
+            Population.setText("Population: 44.27 million");
         }
         if ("Bolivia".equals(choice2))
         {
-            Capital.setText("Sucre");
-            Population.setText("11.05 million");
+            Capital.setText("Capital city: Sucre");
+            Population.setText("Population: 11.05 million");
         }
         if ("Brazil".equals(choice2))
         {
-            Capital.setText("Brasilia");
-            Population.setText("209.3 million ");
+            Capital.setText("Capital city: Brasilia");
+            Population.setText("Population: 209.3 million ");
         }if ("Canada".equals(choice2))
         {
-            Capital.setText("Ottawa");
-            Population.setText("37.06 million");
+            Capital.setText("Capital city: Ottawa");
+            Population.setText("Population: 37.06 million");
         }if ("Chile".equals(choice2))
         {
-            Capital.setText("Santiago");
-            Population.setText("18.05 million");
+            Capital.setText("Capital city: Santiago");
+            Population.setText("Population: 18.05 million");
         }if ("United States".equals(choice2))
         {
-            Capital.setText("Washington");
-            Population.setText("327.2 million");
+            Capital.setText("Capital city: Washington");
+            Population.setText("Population: 327.2 million");
         }if ("Colombia".equals(choice2))
         {
-            Capital.setText("Bogota");
-            Population.setText("49 million");
+            Capital.setText("Capital city: Bogota");
+            Population.setText("Population: 49 million");
         }if ("China".equals(choice2))
         {
-            Capital.setText("Beijing");
-            Population.setText("1.386 billion");
+            Capital.setText("Capital city: Beijing");
+            Population.setText("Population: 1.386 billion");
         }if ("India".equals(choice2))
         {
-            Capital.setText("New Delhi");
-            Population.setText("1.339 billion");
+            Capital.setText("Capital city: New Delhi");
+            Population.setText("Population: 1.339 billion");
         }if ("Japan".equals(choice2))
         {
-            Capital.setText("Tokio");
-            Population.setText("126.8 million");
+            Capital.setText("Capital city: Tokio");
+            Population.setText("Population: 126.8 million");
         }if ("Russia".equals(choice2))
         {
-            Capital.setText("Moscow");
-            Population.setText("144.5 million");
+            Capital.setText("Capital city: Moscow");
+            Population.setText("Population: 144.5 million");
         }if ("Indonesia".equals(choice2))
         {
-            Capital.setText("Jakarta");
-            Population.setText("264 million");
+            Capital.setText("Capital city: Jakarta");
+            Population.setText("Population: 264 million");
         }if ("Turkey".equals(choice2))
         {
-            Capital.setText("Ankara");
-            Population.setText("79.8 million");
+            Capital.setText("Capital city: Ankara");
+            Population.setText("Population: 79.8 million");
         }if ("South Korea".equals(choice2))
         {
-            Capital.setText("Seoul");
-            Population.setText("51.7 million");
+            Capital.setText("Capital city: Seoul");
+            Population.setText("Population: 51.7 million");
         }if ("Egypt".equals(choice2))
         {
-            Capital.setText("Cairo");
-            Population.setText("97.55 million");
+            Capital.setText("Capital city: Cairo");
+            Population.setText("Population: 97.55 million");
         }if ("Nigeria".equals(choice2))
         {
-            Capital.setText("Abuja");
-            Population.setText("190.9 million");
+            Capital.setText("Capital city: Abuja");
+            Population.setText("Population: 190.9 million");
         }if ("South Africa".equals(choice2))
         {
-            Capital.setText("Cape Town");
-            Population.setText("57.7 million");
+            Capital.setText("Capital city: Cape Town");
+            Population.setText("Population: 57.7 million");
         }if ("Algeria".equals(choice2))
         {
-            Capital.setText("Algiers");
-            Population.setText("41.32 million");
+            Capital.setText("Capital city: Algiers");
+            Population.setText("Population: 41.32 million");
         }if ("Morocco".equals(choice2))
         {
-            Capital.setText("Rabat");
-            Population.setText("35.7 million");
+            Capital.setText("Capital city: Rabat");
+            Population.setText("Population: 35.7 million");
         }if ("Ethiopia".equals(choice2))
         {
-            Capital.setText("Addis Ababa");
-            Population.setText("105 million");
+            Capital.setText("Capital city: Addis Ababa");
+            Population.setText("Population: 105 million");
         }if ("Ghana".equals(choice2))
         {
-            Capital.setText("Accra");
-            Population.setText("28.83 million");
+            Capital.setText("Capital city: Accra");
+            Population.setText("Population: 28.83 million");
         }if ("Germany".equals(choice2))
         {
-            Capital.setText("Berlin");
-            Population.setText("83 million");
+            Capital.setText("Capital city: Berlin");
+            Population.setText("Population: 83 million");
         }if ("France".equals(choice2))
         {
-            Capital.setText("Paris");
-            Population.setText("66.99 million");
+            Capital.setText("Capital city: Paris");
+            Population.setText("Population: 66.99 million");
         }if ("United Kingdom".equals(choice2))
         {
-            Capital.setText("London");
-            Population.setText("67.5 million");
+            Capital.setText("Capital city: London");
+            Population.setText("Population: 67.5 million");
         }if ("Italy".equals(choice2))
         {
-            Capital.setText("Rome");
-            Population.setText("60.59 million");
+            Capital.setText("Capital city: Rome");
+            Population.setText("Population: 60.59 million");
         }if ("Spain".equals(choice2))
         {
-            Capital.setText("Madrid");
-            Population.setText("46.9 million");
+            Capital.setText("Capital city: Madrid");
+            Population.setText("Population: 46.9 million");
         }if ("Ukraine".equals(choice2))
         {
-            Capital.setText("Kyiv");
-            Population.setText("44.83 million");
+            Capital.setText("Capital city: Kyiv");
+            Population.setText("Population: 44.83 million");
         }if ("Poland".equals(choice2))
         {
-            Capital.setText("Warsaw");
-            Population.setText("38.43 million");
+            Capital.setText("Capital city: Warsaw");
+            Population.setText("Population: 38.43 million");
         }
     }
     }
